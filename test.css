@@ -1,0 +1,61 @@
+/* @theme abc-editrial */
+ 
+@import 'default';
+ 
+section {
+    font-family: "Arial", "Hiragino Maru Gothic ProN";
+    font-size: 32px;
+    padding: 40px;
+}
+
+section.title h1 {
+    color: navy;
+    font-family: "Arial", "Hiragino Kaku Gothic ProN";
+    font-size: 60px;
+    text-align: center;
+}
+
+section.slides {
+    padding-top: 90px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+section.slides h1:nth-of-type(1) {
+    color: #ffffff;
+    background-color: #4ac;
+    border-top: 0.3em solid #5af;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 1.5em;
+    text-indent: 0.5em;
+}
+
+section.slides h2 {
+    font-size: 32px;
+    color: navy;
+    position: absolute;
+    left: 50px; top: 90px;
+}
+
+.callout {
+    position: relative;
+    padding: 20px;
+    border: 2px solid #f00;
+    border-radius: 15px;
+    background-color: lightgrey;
+    font-size: 36px;
+    color: #333;
+}
+
+.callout::before {
+    position: sticky;
+    content: attr(icon); /* アイコン */
+    top: 5px;
+    left: 5px;
+    font-size: 36px;
+    color: #5af; /* アイコンの色 */
+}
